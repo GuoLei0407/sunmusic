@@ -1,22 +1,40 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '*',
+    redirect: '/discovery'
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/discovery',
+    component: () => import('../views/musicDiscovery.vue')
+  },
+  {
+    path: '/playlist',
+    component: () => import('../views/musicPlayList.vue')
+  },
+  {
+    path: '/listDetail',
+    component: () => import('../views/musicListDetail.vue')
+  },
+  {
+    path: '/songs',
+    component: () => import('../views/musicSongs/musicSongs.vue')
+  },
+  {
+    path: '/search',
+    component: () => import('../views/musicSearch.vue')
+  },
+  {
+    path: '/mvsList',
+    component: () => import('../views/musicMvsList.vue')
+  },
+  {
+    path: '/mv',
+    component: () => import('../views/musicMv.vue')
   }
 ]
 
