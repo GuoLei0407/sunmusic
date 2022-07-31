@@ -20,3 +20,7 @@ ul,
 ol {
   list-style: none;
 }
+/* 解决双重滚动条的问题 */
+body::-webkit-scrollbar {
+  display: none;
+}

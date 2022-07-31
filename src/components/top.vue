@@ -7,7 +7,7 @@
     </div>
     <!-- 中心标题区域 -->
     <div class="logo">
-      <a>网易云音乐</a>
+      <a>小太阳音乐</a>
     </div>
     <!-- 搜索框 -->
     <div class="right-box">
