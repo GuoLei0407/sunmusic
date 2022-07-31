@@ -1,24 +1,3 @@
 # my-music
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Hello,这是我的一个音乐小网站，用的是vue2全家桶+ElementUI构建的，放到vercel上发布，线上网址：https://sunmusic.vercel.app/#/discovery。接口来自：https://github.com/Binaryify/NeteaseCloudMusicApi，
